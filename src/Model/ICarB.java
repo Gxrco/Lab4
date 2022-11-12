@@ -1,3 +1,4 @@
+package Model;
 
 /**
  * Interface para los carros tipo B, estos deben de poder hacer lo que hace el C

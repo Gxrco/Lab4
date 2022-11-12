@@ -1,3 +1,5 @@
+package Model;
+
 import java.util.ArrayList;
 
 /**
@@ -7,7 +9,7 @@ import java.util.ArrayList;
  */
 public interface ICarC {
     /**
-     * @param actual_state estado actual de la radio que se recibe
+     *
      * @return El estado de la radio cambiado
      */
     public boolean SwitchRadioONOFF();
@@ -41,9 +43,9 @@ public interface ICarC {
 
     /**
      * Cambiar la estacion actual de la radio (Solo debe de cambiarse de 0.5 en 0.5)
-     * @param Volume Regresa el volumen actual
+     * @param _station Regresa el volumen actual
      */
-    public void setStation(float Volume);
+    public void setStation(float _station);
 
     /**
      * Obtener el valor actual de la radio

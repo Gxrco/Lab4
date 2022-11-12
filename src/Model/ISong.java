@@ -1,3 +1,4 @@
+package Model;
 
 /**
  * Interface para la clase cancion, estas se usaran en  distintos tipos de array
