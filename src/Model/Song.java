@@ -62,6 +62,6 @@ public class Song implements ISong{
 
     @Override
     public String getGenre() {
-        return null;
+        return genre;
     }
 }
