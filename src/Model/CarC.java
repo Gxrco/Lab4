@@ -17,18 +17,14 @@ public class CarC implements ICarC{
     private ArrayList<ISong> Spotify= new ArrayList<>();
     private ArrayList<ISong> Mp3= new ArrayList<>();
     private ArrayList<String> Contacts= new ArrayList<>();
-    private Random num= new Random();
+    private Random num = new Random();
 
     /**
      * @return El estado de la radio cambiado
      */
     @Override
     public boolean SwitchRadioONOFF() {
-        if (isOnOff){
-            isOnOff=false;
-        }else {
-            isOnOff=true;
-        }
+        isOnOff = !isOnOff;
         return isOnOff;
     }
 
@@ -71,13 +67,7 @@ public class CarC implements ICarC{
      */
     @Override
     public boolean SwitchFrequency(boolean frequency) {
-        boolean F;
-        if (frequency=true){
-            F=false;
-        }else {
-            F=true;
-        }
-        return F;
+        return !frequency;
     }
 
     /**
@@ -103,7 +93,7 @@ public class CarC implements ICarC{
     /**
      * Metodo que debe guardar la estacion recibida en en el ArrayList
      *
-     * @param _station
+     * @param _station  se obtiene la estacion
      */
     @Override
     public void SaveStation(float _station) {
@@ -155,7 +145,6 @@ public class CarC implements ICarC{
      * Este metodo se encarga de cambiar el valor del tipo de reproduccion
      * 1(Reproduccion de CD) 2(Reproduccion de MP3) 3 (Reproduccion de Spotify)
      *
-     * @return Numero que representa el tipo de reproductor
      */
     @Override
     public void setAudioRepType(int _AudioRep) {
@@ -201,8 +190,8 @@ public class CarC implements ICarC{
      * Para ir a la siguiente cancion. Se obtiene el tipo de reproduccion para saber a
      * cual de las 3 listas se ledebe cambiar el indice actual
      *
-     * @param CurrentIndex
-     * @param TypeOfAudioReproduction
+     * @param CurrentIndex Indice actual de la cancion
+     * @param TypeOfAudioReproduction Tipo de reproductor
      */
     @Override
     public int NextSong(int CurrentIndex, int TypeOfAudioReproduction) {
@@ -247,8 +236,8 @@ public class CarC implements ICarC{
      * Para ir a la cancion anterior. Se obtiene el tipo de reproduccion para saber a cual de las 3 listas
      * se le debe cambiar el indice actual
      *
-     * @param CurrentIndex
-     * @param TypeOfAudioReproduction
+     * @param CurrentIndex Indice actual
+     * @param TypeOfAudioReproduction Tipo de reproductor de audio
      */
     @Override
     public int PrevSong(int CurrentIndex, int TypeOfAudioReproduction) {
@@ -332,11 +321,7 @@ public class CarC implements ICarC{
      */
     @Override
     public boolean Connect_DisconnectPhone() {
-        if (getPhoneConnectionStatus()){
-            this.isConnected=false;
-        }else {
-            this.isConnected=true;
-        }
+        this.isConnected = !getPhoneConnectionStatus();
         return isConnected;
     }
 
@@ -453,10 +438,13 @@ public class CarC implements ICarC{
         switch (weather){
             case 0:
                 Weather= "18° C \nCloudy \nHumidity: 80%\nWind: 14 km/h";
+                break;
             case 1:
                 Weather= "32° C \nSunny \nHumidity: 90%\nWind: 05 km/h";
+                break;
             case 2:
                 Weather= "18° C \nRain \nHumidity: 70%\nWind: 20 km/h";
+                break;
         }
         return Weather;
     }
@@ -504,7 +492,7 @@ public class CarC implements ICarC{
 
     /**
      * Trae al index actual
-     * @return ActualIndex
+     * @return ActualIndex Indice actual
      */
     @Override
     public int getActualIndex() {
@@ -513,7 +501,7 @@ public class CarC implements ICarC{
 
     /**
      * establece el index actual
-     * @param actualIndex
+     * @param actualIndex Indice actual
      */
     @Override
     public void setActualIndex(int actualIndex) {
