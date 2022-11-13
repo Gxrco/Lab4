@@ -39,7 +39,7 @@ public interface ICarC {
      * @return el valor cambiado de la frecuencia
      */
 
-    public float SwitchFrequency(float frequency);
+    public boolean SwitchFrequency(boolean frequency);
 
     /**
      * Cambiar la estacion actual de la radio (Solo debe de cambiarse de 0.5 en 0.5)
@@ -79,7 +79,7 @@ public interface ICarC {
      * 1(Reproduccion de CD) 2(Reproduccion de MP3) 3 (Reproduccion de Spotify)
      * @return Numero que representa el tipo de reproductor
      */
-    public void setAudioRepType();
+    public void setAudioRepType(int AudioRep);
 
     /**
      * Metodo que se encarga de obtener una de las listas de canciones pre definidas
@@ -97,7 +97,7 @@ public interface ICarC {
      * @param TypeOfAudioReproduction
      * @param CurrentIndex
      */
-    public void NextSong(int CurrentIndex, int TypeOfAudioReproduction);
+    public int NextSong(int CurrentIndex, int TypeOfAudioReproduction);
 
     /**
      * Metodo que se encarga de cambiar el indice actual de la lista de reproduccion.
@@ -106,7 +106,7 @@ public interface ICarC {
      * @param TypeOfAudioReproduction
      * @param CurrentIndex
      */
-    public void PrevSong(int CurrentIndex, int TypeOfAudioReproduction);
+    public int PrevSong(int CurrentIndex, int TypeOfAudioReproduction);
 
     /**
      * Este metodo se encarga de regresar una cadena de texto que muestra las caracteristicas
@@ -146,6 +146,12 @@ public interface ICarC {
     public int getCallStatus();
 
     /**
+     * cambia el estado de la llamada al cual se esta teniendo
+     * @param _Status
+     */
+    public void setCallStatus(int _Status);
+
+    /**
      * Metodo para hacer una llamada, este metodo
      * verifica si la llamada es posible, y si lo es, regresar
      * un mensaje que contenga el nombre de la persona que se esta llamando
@@ -173,4 +179,22 @@ public interface ICarC {
      */
     public String getWeatherForCast();
 
+    /**
+     * Metodo para agregar canciones a una de las 3 diferentes tipos de listas
+     * @param song cancion que se guardara
+     * @param list tipo de lista a la que se desea guardar
+     */
+    public void addSongToAList(int list, ISong song);
+
+    /**
+     *
+     * @return actual index
+     */
+    public int getActualIndex();
+
+    /**
+     *
+     * @param actualIndex
+     */
+    public void setActualIndex(int actualIndex);
 }
