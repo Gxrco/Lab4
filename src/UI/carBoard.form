@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI.carBoard">
+  <grid id="27dc6" binding="cbPanel" layout-manager="GridLayoutManager" row-count="22" column-count="16" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1250" height="709"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="8fe78" class="javax.swing.JButton" binding="volumeUpButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume Up"/>
+        </properties>
+      </component>
+      <component id="892dc" class="javax.swing.JButton" binding="volumeDownButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="5" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume Down"/>
+        </properties>
+      </component>
+      <component id="63e3b" class="javax.swing.JButton" binding="FMModeButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="FM Mode"/>
+        </properties>
+      </component>
+      <component id="ddc84" class="javax.swing.JButton" binding="AMModeButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="AM Mode"/>
+        </properties>
+      </component>
+      <component id="a7cfd" class="javax.swing.JButton" binding="stationButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station +"/>
+        </properties>
+      </component>
+      <component id="2b0e6" class="javax.swing.JButton" binding="stationButton1" default-binding="true">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station -"/>
+        </properties>
+      </component>
+      <component id="ffc4a" class="javax.swing.JButton" binding="saveStationButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save Station"/>
+        </properties>
+      </component>
+      <component id="95f50" class="javax.swing.JComboBox" binding="songCB">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9be02" class="javax.swing.JButton" binding="selectButton" default-binding="true">
+        <constraints>
+          <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Select"/>
+        </properties>
+      </component>
+      <component id="60c5e" class="javax.swing.JButton" binding="nextButton" default-binding="true">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Next"/>
+        </properties>
+      </component>
+      <component id="86b3c" class="javax.swing.JButton" binding="previousButton" default-binding="true">
+        <constraints>
+          <grid row="13" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Previous"/>
+        </properties>
+      </component>
+      <component id="2888d" class="javax.swing.JRadioButton" binding="radioModeRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Radio Mode"/>
+        </properties>
+      </component>
+      <component id="63e87" class="javax.swing.JRadioButton" binding="reproductionModeRadioButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Reproduction Mode"/>
+        </properties>
+      </component>
+      <component id="6bd1b" class="javax.swing.JRadioButton" binding="CDRadioButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="CD"/>
+        </properties>
+      </component>
+      <component id="48877" class="javax.swing.JRadioButton" binding="MP3RadioButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="MP3"/>
+        </properties>
+      </component>
+      <component id="ebfcb" class="javax.swing.JRadioButton" binding="spotifyRadioButton1" default-binding="true">
+        <constraints>
+          <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Spotify"/>
+        </properties>
+      </component>
+      <component id="8ea70" class="javax.swing.JLabel" binding="label4">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Song Info"/>
+        </properties>
+      </component>
+      <component id="5be54" class="javax.swing.JRadioButton" binding="phoneModeRadioButton" default-binding="true">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Phone Mode"/>
+        </properties>
+      </component>
+      <component id="14d8b" class="javax.swing.JRadioButton" binding="connectDisconnectRadioButton" default-binding="true">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Connect/Disconnect"/>
+        </properties>
+      </component>
+      <component id="4bac9" class="javax.swing.JComboBox" binding="callCB">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="58952" class="javax.swing.JButton" binding="callButton" default-binding="true">
+        <constraints>
+          <grid row="16" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Call"/>
+        </properties>
+      </component>
+      <component id="44bd4" class="javax.swing.JButton" binding="endCallButton" default-binding="true">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="End Call"/>
+        </properties>
+      </component>
+      <component id="388a0" class="javax.swing.JRadioButton" binding="speakerONOFFRadioButton" default-binding="true">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Speaker ON/OFF"/>
+        </properties>
+      </component>
+      <component id="fbd4" class="javax.swing.JRadioButton" binding="productivityModeRadioButton" default-binding="true">
+        <constraints>
+          <grid row="19" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Productivity Mode"/>
+        </properties>
+      </component>
+      <component id="7ba8d" class="javax.swing.JButton" binding="planTripButton" default-binding="true">
+        <constraints>
+          <grid row="20" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Plan Trip"/>
+        </properties>
+      </component>
+      <component id="7db1" class="javax.swing.JLabel" binding="label2">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Mode: "/>
+        </properties>
+      </component>
+      <component id="ff66c" class="javax.swing.JLabel" binding="label3">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station: "/>
+        </properties>
+      </component>
+      <component id="4bdb8" class="javax.swing.JLabel" binding="label1">
+        <constraints>
+          <grid row="2" column="1" row-span="2" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume: "/>
+        </properties>
+      </component>
+      <component id="eb568" class="javax.swing.JButton" binding="volumeUpButton1" default-binding="true">
+        <constraints>
+          <grid row="2" column="6" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume Up"/>
+        </properties>
+      </component>
+      <component id="e8521" class="javax.swing.JLabel" binding="label5">
+        <constraints>
+          <grid row="2" column="7" row-span="2" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume: "/>
+        </properties>
+      </component>
+      <component id="4f00e" class="javax.swing.JButton" binding="volumeDownButton1" default-binding="true">
+        <constraints>
+          <grid row="2" column="11" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume Down"/>
+        </properties>
+      </component>
+      <component id="23be9" class="javax.swing.JRadioButton" binding="radioModeRadioButton1" default-binding="true">
+        <constraints>
+          <grid row="4" column="7" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Radio Mode"/>
+        </properties>
+      </component>
+      <component id="696af" class="javax.swing.JButton" binding="FMModeButton1" default-binding="true">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="FM Mode"/>
+        </properties>
+      </component>
+      <component id="a82f5" class="javax.swing.JButton" binding="AMModeButton1" default-binding="true">
+        <constraints>
+          <grid row="5" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="AM Mode"/>
+        </properties>
+      </component>
+      <component id="27414" class="javax.swing.JLabel" binding="label6">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Mode: "/>
+        </properties>
+      </component>
+      <component id="4cd24" class="javax.swing.JButton" binding="stationButton2" default-binding="true">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station +"/>
+        </properties>
+      </component>
+      <component id="3338d" class="javax.swing.JButton" binding="stationButton3" default-binding="true">
+        <constraints>
+          <grid row="6" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station -"/>
+        </properties>
+      </component>
+      <component id="80bd0" class="javax.swing.JLabel" binding="label7">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station: "/>
+        </properties>
+      </component>
+      <component id="11749" class="javax.swing.JButton" binding="saveStationButton1" default-binding="true">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save Station"/>
+        </properties>
+      </component>
+      <component id="f60be" class="javax.swing.JRadioButton" binding="reproductionModeRadioButton1" default-binding="true">
+        <constraints>
+          <grid row="9" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Reproduction Mode"/>
+        </properties>
+      </component>
+      <component id="8c5a3" class="javax.swing.JRadioButton" binding="CDRadioButton1" default-binding="true">
+        <constraints>
+          <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="CD"/>
+        </properties>
+      </component>
+      <component id="b5d78" class="javax.swing.JRadioButton" binding="MP3RadioButton1" default-binding="true">
+        <constraints>
+          <grid row="10" column="7" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="MP3"/>
+        </properties>
+      </component>
+      <component id="23427" class="javax.swing.JRadioButton" binding="spotifyRadioButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Spotify"/>
+        </properties>
+      </component>
+      <component id="f9108" class="javax.swing.JComboBox" binding="songCB1">
+        <constraints>
+          <grid row="11" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="2f90" class="javax.swing.JButton" binding="selectButton1" default-binding="true">
+        <constraints>
+          <grid row="11" column="8" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Select"/>
+        </properties>
+      </component>
+      <component id="34d86" class="javax.swing.JRadioButton" binding="phoneModeRadioButton1" default-binding="true">
+        <constraints>
+          <grid row="14" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Phone Mode"/>
+        </properties>
+      </component>
+      <component id="f2635" class="javax.swing.JRadioButton" binding="connectDisconnectRadioButton1" default-binding="true">
+        <constraints>
+          <grid row="15" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Connect/Disconnect"/>
+        </properties>
+      </component>
+      <component id="49de7" class="javax.swing.JLabel" binding="label8">
+        <constraints>
+          <grid row="12" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Song Info"/>
+        </properties>
+      </component>
+      <component id="5135c" class="javax.swing.JButton" binding="nextButton1" default-binding="true">
+        <constraints>
+          <grid row="13" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Next"/>
+        </properties>
+      </component>
+      <component id="5b471" class="javax.swing.JButton" binding="previousButton1" default-binding="true">
+        <constraints>
+          <grid row="13" column="10" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Previous"/>
+        </properties>
+      </component>
+      <component id="bb147" class="javax.swing.JComboBox" binding="callCB1">
+        <constraints>
+          <grid row="16" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="92701" class="javax.swing.JButton" binding="callButton1" default-binding="true">
+        <constraints>
+          <grid row="16" column="8" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Call"/>
+        </properties>
+      </component>
+      <component id="f9deb" class="javax.swing.JButton" binding="endCallButton1" default-binding="true">
+        <constraints>
+          <grid row="17" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="End Call"/>
+        </properties>
+      </component>
+      <component id="89d33" class="javax.swing.JButton" binding="callLastContactButton" default-binding="true">
+        <constraints>
+          <grid row="18" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Call Last Contact"/>
+        </properties>
+      </component>
+      <component id="e3ff7" class="javax.swing.JComboBox" binding="stationCB">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="f98cb" class="javax.swing.JButton" binding="chargeStationButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Charge Station"/>
+        </properties>
+      </component>
+      <component id="aa35a" class="javax.swing.JButton" binding="chargeStationButton1" default-binding="true">
+        <constraints>
+          <grid row="8" column="8" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Charge Station"/>
+        </properties>
+      </component>
+      <component id="9cdc2" class="javax.swing.JComboBox" binding="stationCB1">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="24b4a" class="javax.swing.JButton" binding="showPresentationCardsButton" default-binding="true">
+        <constraints>
+          <grid row="20" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Presentation Cards"/>
+        </properties>
+      </component>
+      <component id="a8b73" class="javax.swing.JRadioButton" binding="productivityModeRadioButton1" default-binding="true">
+        <constraints>
+          <grid row="19" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Productivity Mode"/>
+        </properties>
+      </component>
+      <component id="d1159" class="javax.swing.JButton" binding="volumeUpButton2" default-binding="true">
+        <constraints>
+          <grid row="2" column="12" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume Up"/>
+        </properties>
+      </component>
+      <component id="42ca3" class="javax.swing.JButton" binding="volumeDownButton2" default-binding="true">
+        <constraints>
+          <grid row="2" column="14" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume Down"/>
+        </properties>
+      </component>
+      <component id="b7300" class="javax.swing.JLabel" binding="label9">
+        <constraints>
+          <grid row="2" column="13" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volume: "/>
+        </properties>
+      </component>
+      <component id="a3b46" class="javax.swing.JRadioButton" binding="radioModeRadioButton2" default-binding="true">
+        <constraints>
+          <grid row="4" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Radio Mode"/>
+        </properties>
+      </component>
+      <component id="fe930" class="javax.swing.JButton" binding="FMModeButton2" default-binding="true">
+        <constraints>
+          <grid row="5" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="FM Mode"/>
+        </properties>
+      </component>
+      <component id="a4c65" class="javax.swing.JButton" binding="AMModeButton2" default-binding="true">
+        <constraints>
+          <grid row="5" column="14" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="AM Mode"/>
+        </properties>
+      </component>
+      <component id="320ec" class="javax.swing.JButton" binding="stationButton4" default-binding="true">
+        <constraints>
+          <grid row="6" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station +"/>
+        </properties>
+      </component>
+      <component id="fd97b" class="javax.swing.JButton" binding="stationButton5" default-binding="true">
+        <constraints>
+          <grid row="6" column="14" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station -"/>
+        </properties>
+      </component>
+      <component id="f8f16" class="javax.swing.JLabel" binding="label10">
+        <constraints>
+          <grid row="5" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Mode:"/>
+        </properties>
+      </component>
+      <component id="590b6" class="javax.swing.JLabel" binding="label11">
+        <constraints>
+          <grid row="6" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Station:  "/>
+        </properties>
+      </component>
+      <component id="c8d5e" class="javax.swing.JButton" binding="saveStationButton2" default-binding="true">
+        <constraints>
+          <grid row="7" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save Station"/>
+        </properties>
+      </component>
+      <component id="f5c2a" class="javax.swing.JComboBox" binding="stationCB2">
+        <constraints>
+          <grid row="8" column="12" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="72a47" class="javax.swing.JButton" binding="chargeStationButton2" default-binding="true">
+        <constraints>
+          <grid row="8" column="14" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Charge Station"/>
+        </properties>
+      </component>
+      <component id="1ec9b" class="javax.swing.JRadioButton" binding="reproductionModeRadioButton2" default-binding="true">
+        <constraints>
+          <grid row="9" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Reproduction Mode"/>
+        </properties>
+      </component>
+      <component id="ddff0" class="javax.swing.JRadioButton" binding="CDRadioButton2" default-binding="true">
+        <constraints>
+          <grid row="10" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="CD"/>
+        </properties>
+      </component>
+      <component id="977f3" class="javax.swing.JRadioButton" binding="MP3RadioButton2" default-binding="true">
+        <constraints>
+          <grid row="10" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="MP3"/>
+        </properties>
+      </component>
+      <component id="7de1" class="javax.swing.JRadioButton" binding="spotifyRadioButton2" default-binding="true">
+        <constraints>
+          <grid row="10" column="15" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Spotify"/>
+        </properties>
+      </component>
+      <component id="bf02e" class="javax.swing.JComboBox" binding="songCB2">
+        <constraints>
+          <grid row="11" column="12" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e183c" class="javax.swing.JButton" binding="selectButton2" default-binding="true">
+        <constraints>
+          <grid row="11" column="14" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Select"/>
+        </properties>
+      </component>
+      <component id="30f52" class="javax.swing.JLabel" binding="label12">
+        <constraints>
+          <grid row="12" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Song Info"/>
+        </properties>
+      </component>
+      <component id="8cec9" class="javax.swing.JButton" binding="nextButton2" default-binding="true">
+        <constraints>
+          <grid row="13" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Next"/>
+        </properties>
+      </component>
+      <component id="e1543" class="javax.swing.JButton" binding="previousButton2" default-binding="true">
+        <constraints>
+          <grid row="13" column="14" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Previous"/>
+        </properties>
+      </component>
+      <component id="4c43a" class="javax.swing.JRadioButton" binding="phoneModeRadioButton2" default-binding="true">
+        <constraints>
+          <grid row="14" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Phone Mode"/>
+        </properties>
+      </component>
+      <component id="4b38d" class="javax.swing.JRadioButton" binding="connectDisconnectRadioButton2" default-binding="true">
+        <constraints>
+          <grid row="15" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Connect/Disconnect"/>
+        </properties>
+      </component>
+      <component id="936ed" class="javax.swing.JComboBox" binding="callCB2">
+        <constraints>
+          <grid row="16" column="12" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ecc7e" class="javax.swing.JButton" binding="callButton2" default-binding="true">
+        <constraints>
+          <grid row="16" column="14" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Call"/>
+        </properties>
+      </component>
+      <component id="3877b" class="javax.swing.JButton" binding="endCallButton2" default-binding="true">
+        <constraints>
+          <grid row="17" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="End Call"/>
+        </properties>
+      </component>
+      <component id="a46a4" class="javax.swing.JButton" binding="putCallOnWaitButton" default-binding="true">
+        <constraints>
+          <grid row="18" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Put Call on Wait"/>
+        </properties>
+      </component>
+      <component id="edd58" class="javax.swing.JRadioButton" binding="productivityModeRadioButton2" default-binding="true">
+        <constraints>
+          <grid row="19" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Productivity Mode"/>
+        </properties>
+      </component>
+      <component id="b1fbb" class="javax.swing.JButton" binding="weatherForecastButton" default-binding="true">
+        <constraints>
+          <grid row="20" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Weather Forecast"/>
+        </properties>
+      </component>
+      <component id="69971" class="javax.swing.JButton" binding="typeAButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Type A"/>
+        </properties>
+      </component>
+      <component id="b394b" class="javax.swing.JRadioButton" binding="turnOnARadioButton">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Turn On"/>
+        </properties>
+      </component>
+      <component id="92ed9" class="javax.swing.JButton" binding="typeBButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Type B"/>
+        </properties>
+      </component>
+      <component id="fdb47" class="javax.swing.JRadioButton" binding="turnOnBRadioButton">
+        <constraints>
+          <grid row="0" column="7" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Turn On"/>
+        </properties>
+      </component>
+      <component id="cbfec" class="javax.swing.JButton" binding="typeCButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="13" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Type C"/>
+        </properties>
+      </component>
+      <component id="c0c87" class="javax.swing.JRadioButton" binding="turnOnCRadioButton">
+        <constraints>
+          <grid row="0" column="13" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Turn On"/>
+        </properties>
+      </component>
+      <component id="752f5" class="javax.swing.JLabel" binding="label13">
+        <constraints>
+          <grid row="21" column="12" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Weather Forecast: "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

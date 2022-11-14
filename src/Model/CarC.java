@@ -12,11 +12,11 @@ public class CarC implements ICarC{
     private boolean isConnected;
     private int AudioRep;
     private int ActualIndex;
-    private ArrayList<Float> Stations= new ArrayList<Float>();
-    private ArrayList<ISong> CD= new ArrayList<>();
-    private ArrayList<ISong> Spotify= new ArrayList<>();
-    private ArrayList<ISong> Mp3= new ArrayList<>();
-    private ArrayList<String> Contacts= new ArrayList<>();
+    public static ArrayList<Float> Stations= new ArrayList<Float>();
+    public static ArrayList<ISong> CD= new ArrayList<>();
+    public static ArrayList<ISong> Spotify= new ArrayList<>();
+    public static ArrayList<ISong> Mp3= new ArrayList<>();
+    public static ArrayList<String> Contacts= new ArrayList<>();
     private Random num = new Random();
 
     /**

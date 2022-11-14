@@ -2,6 +2,15 @@ package Model;
 
 public class Song implements ISong{
 
+    public Song(String _title, String _artist, String _album, String _duration, String _genre, String _ID){
+        title = _title;
+        artist = _artist;
+        album = _album;
+        duration = _duration;
+        genre = _genre;
+        ID = _ID;
+    }
+
     private String title;
     private String artist;
     private String album;

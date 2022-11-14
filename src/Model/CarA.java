@@ -6,7 +6,7 @@ public class CarA extends CarB implements ICarA{
 
     private boolean speakerStatus;
 
-    private ArrayList<Trip> Ptrips = new ArrayList<>();
+    private static ArrayList<Trip> Ptrips = new ArrayList<>();
 
     @Override
     public boolean getSpeakerStatus() {

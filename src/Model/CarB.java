@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class CarB extends CarC implements ICarB{
-    ArrayList<String> cards = new ArrayList<>();
+    public static ArrayList<String> cards = new ArrayList<>();
     private String LCName;
 
     public String makeCall(String NameforCall) {
