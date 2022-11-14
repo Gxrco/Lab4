@@ -12,10 +12,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Objects;
 
+/**
+ * The type Car board.
+ */
 public class carBoard extends JFrame{
 
+    /**
+     * The Volume.
+     */
     int volume = 0;
 
+    /**
+     * The Station.
+     */
     float station = 100.0F;
 
     private String carType;
@@ -118,12 +127,26 @@ public class carBoard extends JFrame{
     private JLabel label12;
     private JLabel label13;
 
+    /**
+     * The constant carA_.
+     */
     public static CarA carA_ = new CarA();
 
+    /**
+     * The constant carB_.
+     */
     public static CarB carB_ = new CarB();
 
+    /**
+     * The constant carC_.
+     */
     public static CarC carC_ = new CarC();
 
+    /**
+     * Instantiates a new Car board.
+     *
+     * @param carType the car type
+     */
     public carBoard(String carType) {
 
         enableButtons(carType);
@@ -1021,6 +1044,11 @@ public class carBoard extends JFrame{
     }
 
 
+    /**
+     * Enable buttons.
+     *
+     * @param carType the car type
+     */
     public void enableButtons(String carType){
 
         if(carType.equalsIgnoreCase("A")){
@@ -1049,14 +1077,23 @@ public class carBoard extends JFrame{
         }
     }
 
+    /**
+     * Enable a buttons.
+     */
     public void enableAButtons(){
         buttonsE(turnOnARadioButton, radioModeRadioButton, reproductionModeRadioButton, phoneModeRadioButton, productivityModeRadioButton);
     }
 
+    /**
+     * Enable b buttons.
+     */
     public void enableBButtons(){
         buttonsE(turnOnBRadioButton, radioModeRadioButton1, reproductionModeRadioButton1, phoneModeRadioButton1, productivityModeRadioButton1);
     }
 
+    /**
+     * Enable c buttons.
+     */
     public void enableCButtons(){
         buttonsE(turnOnCRadioButton, radioModeRadioButton2, reproductionModeRadioButton2, phoneModeRadioButton2, productivityModeRadioButton2);
     }
@@ -1084,6 +1121,9 @@ public class carBoard extends JFrame{
         }
     }
 
+    /**
+     * Hide b.
+     */
     public void hideB(){
         volumeUpButton.setVisible(false);
         volumeDownButton.setVisible(false);

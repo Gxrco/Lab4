@@ -3,7 +3,13 @@ package Model;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+/**
+ * The type Car b.
+ */
 public class CarB extends CarC implements ICarB{
+    /**
+     * The constant cards.
+     */
     public static ArrayList<String> cards = new ArrayList<>();
     private String LCName;
 

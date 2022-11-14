@@ -2,6 +2,9 @@ package Model;
 
 import java.util.ArrayList;
 
+/**
+ * The type Car a.
+ */
 public class CarA extends CarB implements ICarA{
 
     private boolean speakerStatus;
@@ -26,6 +29,11 @@ public class CarA extends CarB implements ICarA{
         return trip.toString();
     }
 
+    /**
+     * Gets ptrips.
+     *
+     * @return the ptrips
+     */
     public ArrayList<Trip> getPtrips() {
         return Ptrips;
     }

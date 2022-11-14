@@ -8,6 +8,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 
+/**
+ * The type P cards.
+ */
 public class PCards extends JFrame{
 
     private JList<String> cardList = new JList<>();
@@ -21,6 +24,9 @@ public class PCards extends JFrame{
     private DefaultTableModel model = (DefaultTableModel) table1.getModel();
 
 
+    /**
+     * Instantiates a new P cards.
+     */
     public PCards(){
 
         setContentPane(cardsPanel);

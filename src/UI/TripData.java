@@ -6,6 +6,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Trip data.
+ */
 public class TripData extends JFrame{
     private JTextField dayTXT;
     private JPanel tripPanel;
@@ -19,6 +22,9 @@ public class TripData extends JFrame{
     private static JFrame frame;
 
 
+    /**
+     * Instantiates a new Trip data.
+     */
     public TripData(){
 
         setContentPane(tripPanel);

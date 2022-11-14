@@ -1,7 +1,20 @@
 package Model;
 
+/**
+ * The type Song.
+ */
 public class Song implements ISong{
 
+    /**
+     * Instantiates a new Song.
+     *
+     * @param _title    the title
+     * @param _artist   the artist
+     * @param _album    the album
+     * @param _duration the duration
+     * @param _genre    the genre
+     * @param _ID       the id
+     */
     public Song(String _title, String _artist, String _album, String _duration, String _genre, String _ID){
         title = _title;
         artist = _artist;
